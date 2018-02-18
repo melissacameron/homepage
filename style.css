@@ -1,0 +1,144 @@
+body {
+	background-color:#F9F9F9;
+	margin:0;
+	padding:0;
+	font-family: 'Poppins', sans-serif;
+	color:#30464B;
+	font-weight: 200;
+	text-rendering: optimizeLegibility;
+	background-image: url(assets/bg-v1.png);
+  	background-repeat: repeat-x; 
+}
+
+nav {
+	width: 100%;
+	background-color:#FFF;
+	height:80px;
+	position:fixed;
+	/* offset-x | offset-y | blur-radius | spread-radius | color */
+	box-shadow: 0px 2px 24px 10px rgba(81, 105, 112, 0.08), 0 4px 14px 0 rgba(1,1,1,.05);
+}
+
+.content {
+	width:800px;
+	margin:0 auto;
+}
+
+nav h1 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height:1.5em;
+	margin:26px 0;
+	display: inline-block;
+}
+
+.links {
+	margin-right:0;
+	display:inline-block;
+	float:right;
+}
+nav h4 {
+	display: inline-block;
+	margin-right:40px;
+	font-size:14px;
+	font-weight:400;
+/*	margin: 14px 40px 12px 0;*/
+}
+
+.button-link {
+/*	width:120px*/
+	height:48px;
+	background-color:#6D8FF1;
+	border-radius:1px;
+	display:inline-block;
+	margin:16px 0;
+}
+
+.button-link h5 {
+	display:inline-block;
+	color: #FFF;
+	padding: 0px 24px;
+	font-weight: 600;
+	font-size: 14px;
+	margin: 14px auto;
+
+}
+.section {
+	padding-top:140px;
+}
+.avatar {
+	width:360px;
+/*	filter: grayscale(10%);*/
+	image-rendering: crisp-edges;
+}
+
+.card {
+	background-color:#FFF;
+	border-radius:1px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 2px 24px 10px rgba(40,101,117,.08);
+	padding: 40px 40px 30px 40px;
+	z-index:5;
+}
+
+.card h2 {
+	font-weight:500;
+	font-size:32px;
+	line-height:1.5em;
+	margin-top:0;
+	margin-bottom:16px;
+}
+
+.card h3 {
+	font-weight:400;
+	font-size:24px;
+	line-height:1.5em;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+p { 
+	font-family:"Montserrat", "Poppins", "Arial", sans-serif;
+	font-size:14px;
+	font-weight:100;
+	line-height:24px;
+}
+
+a {
+	color:#6D8FF1;
+	text-decoration:none;
+	font-weight:500;
+}
+
+a:hover {
+	color:#4252B6;
+}
+
+hr {
+	width: 120px;
+	color:#E2E5E6;
+	margin: 20px auto 28px 0;
+	opacity:0.3;
+}
+
+#main {
+	width:480px;
+	position:relative;
+	margin-top:-225px;
+	float:right;
+}
+
+#work {
+	width:470px;
+	margin-top:-380px;
+	float:left;
+}
+.spacegirl {
+	width:400px;
+	float:right;
+	margin-top:80px;
+	z-index:-100;
+}
+
+#work-container {
+	margin-bottom:500px;
+}
