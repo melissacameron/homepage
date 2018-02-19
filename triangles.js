@@ -2,9 +2,9 @@ $(function() {
   // Settings
   var width = 12;
   var height = 10;
-  var space = 3;
+  var space = 9;
 
-  var timeBetweenPods = 300;
+  var timeBetweenPods = 500;
   var timeBetweenTriangles = 40;
 
   // The code
