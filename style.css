@@ -6,8 +6,7 @@ body {
 	color:#30464B;
 	font-weight: 200;
 	text-rendering: optimizeLegibility;
-	background-image: url(assets/bg-v1.png);
-  	background-repeat: repeat-x; 
+  	background-repeat: repeat-x;
 }
 
 nav {
@@ -15,6 +14,7 @@ nav {
 	background-color:#FFF;
 	height:80px;
 	position:fixed;
+    z-index: 101;
 	/* offset-x | offset-y | blur-radius | spread-radius | color */
 	box-shadow: 0px 2px 24px 10px rgba(81, 105, 112, 0.08), 0 4px 14px 0 rgba(1,1,1,.05);
 }
@@ -22,6 +22,8 @@ nav {
 .content {
 	width:800px;
 	margin:0 auto;
+    z-index: 100;
+    position: relative;
 }
 
 nav h1 {
@@ -96,7 +98,7 @@ nav h4 {
 	margin-bottom:0;
 }
 
-p { 
+p {
 	font-family:"Montserrat", "Poppins", "Arial", sans-serif;
 	font-size:14px;
 	font-weight:100;
@@ -141,4 +143,40 @@ hr {
 
 #work-container {
 	margin-bottom:500px;
+}
+
+/* Triangle stuff */
+svg {
+    position: absolute;
+}
+polygon {
+    fill: #f9f9f9;
+}
+#triangles {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.6s ease-out 0.5s;
+}
+#triangles.ready {
+    opacity: 1;
+}
+#triangles .on.o1 {
+    fill: rgba(109, 143, 241, 0);
+}
+#triangles .on.o2 {
+    fill: rgba(109, 143, 241, 0.2);
+}
+#triangles .on.o3 {
+    fill: rgba(109, 143, 241, 0.4);
+}
+#triangles .on.o4 {
+    fill: rgba(109, 143, 241, 0.6);
+}
+#triangles .on.o5 {
+    fill: rgba(109, 143, 241, 0.8);
 }
