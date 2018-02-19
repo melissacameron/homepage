@@ -74,7 +74,7 @@ $(function() {
       var x = $triangles.random().data('x');
       var y = $triangles.random().data('y');
 
-      for(var i = 0; i < 5; i++) {
+      for(var i = 0; i < 3; i++) {
         els.push('triangle-' + x + '-' + y);
         x++;
         els.push('triangle-' + x + '-' + y);

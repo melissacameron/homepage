@@ -16,14 +16,16 @@ nav {
 	position:fixed;
     z-index: 101;
 	/* offset-x | offset-y | blur-radius | spread-radius | color */
-	box-shadow: 0px 2px 24px 10px rgba(81, 105, 112, 0.08), 0 4px 14px 0 rgba(1,1,1,.05);
+	box-shadow: 0px 2px 24px 10px rgba(1, 1, 1, 0.04), 0 4px 14px 0 rgba(1,1,1,.05);
 }
 
 .content {
-	width:800px;
+	width:100%;
 	margin:0 auto;
+	padding: 0 100px;
     z-index: 100;
     position: relative;
+    box-sizing: border-box;
 }
 
 nav h1 {
@@ -55,6 +57,13 @@ nav h4 {
 	display:inline-block;
 	margin:16px 0;
 }
+.button-link a {
+	color:#FFF;
+}
+.button-link a:hover {
+	opacity:.5;
+	color:#FFF;
+}
 
 .button-link h5 {
 	display:inline-block;
@@ -66,10 +75,13 @@ nav h4 {
 
 }
 .section {
-	padding-top:140px;
+	padding-top:120px;
+	width: 800px;
+	text-align:center;
 }
 .avatar {
-	width:360px;
+	width:280px;
+	text-align:center;
 /*	filter: grayscale(10%);*/
 	image-rendering: crisp-edges;
 }
@@ -77,9 +89,11 @@ nav h4 {
 .card {
 	background-color:#FFF;
 	border-radius:1px;
-	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 2px 24px 10px rgba(40,101,117,.08);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 2px 24px 10px rgba(1,1,1,.03);
 	padding: 40px 40px 30px 40px;
 	z-index:5;
+	position:relative;
+	text-align:left;
 }
 
 .card h2 {
@@ -91,8 +105,8 @@ nav h4 {
 }
 
 .card h3 {
-	font-weight:400;
-	font-size:24px;
+	font-weight:500;
+	font-size:20px;
 	line-height:1.5em;
 	margin-top:0;
 	margin-bottom:0;
@@ -124,25 +138,31 @@ hr {
 
 #main {
 	width:480px;
-	position:relative;
-	margin-top:-225px;
-	float:right;
+	margin-left:470px;
+/*	position:relative;*/
+	margin-top:-200px;
+	float:left;
 }
 
 #work {
-	width:470px;
-	margin-top:-380px;
+	width:520px;
+	margin-top:-160px;
+	margin-left: 240px;
 	float:left;
+/*	clear:both;*/
+	margin-bottom:0px;
 }
 .spacegirl {
-	width:400px;
-	float:right;
-	margin-top:80px;
-	z-index:-100;
+	width:360px;
+	text-align:left;
+	float:left;
+	margin-top:-40px;
+/*	margin-left: -800px;*/
+	position: relative;
 }
 
 #work-container {
-	margin-bottom:500px;
+	margin-bottom:300px;
 }
 
 /* Triangle stuff */
@@ -179,4 +199,40 @@ polygon {
 }
 #triangles .on.o5 {
     fill: rgba(109, 143, 241, 0.8);
+}
+
+@media only screen and (max-width: 940px) {
+	#triangles {
+		display: none;
+	}
+	.links {
+		display: none;
+	}
+	.content {
+		padding: 0;
+	}
+	.section {
+		width: auto;
+		padding-top: 80px;
+	}
+	h1 {
+		width: 100%;
+		text-align: center;
+	}
+	#main, .avatar, #work, .spacegirl {
+		max-width: 100%;
+		width: auto;
+	    position: relative;
+	    left: 0;
+	    float: none;
+	    margin-left: 0;
+	    box-sizing: border-box;
+	    margin-top: 0;
+	}
+	#main, #work {
+		margin: -30px 20px 0;
+	}
+	#work-container {
+		margin-bottom: 20px;
+	}
 }
