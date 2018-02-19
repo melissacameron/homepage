@@ -50,19 +50,23 @@ nav h4 {
 }
 
 .button-link {
-/*	width:120px*/
-	height:48px;
 	background-color:#6D8FF1;
 	border-radius:1px;
 	display:inline-block;
 	margin:16px 0;
+	color: #fff;
+	background-color: #6D8FF1;
+    border-radius: 1px;
+    margin: 16px 0;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 14px 20px;
+    font-size: 14px;
 }
-.button-link a {
-	color:#FFF;
-}
-.button-link a:hover {
-	opacity:.5;
-	color:#FFF;
+.button-link:hover {
+	background-color:#4252B6;
+	color: #FFF;
 }
 
 .button-link h5 {
